@@ -11,12 +11,13 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    var mapNode = SKTileMapNode()
     let gameCamera = GameCamera()
     var panRecogniser = UIPanGestureRecognizer()
     
     override func didMove(to view: SKView) {
-      addCamera()
-        setupGestureRecognisers()
+      setupLevel()
+      setupGestureRecognisers()
     }
     
     func setupGestureRecognisers() {
@@ -30,8 +31,15 @@ class GameScene: SKScene {
         addChild(gameCamera)
         gameCamera.position = CGPoint(x: view.bounds.size.width/2, y: view.bounds.size.height/2)
         camera = gameCamera
+        gameCamera.setConstraints(with: self, and: mapNode.frame, to: nil)
     }
     
+    func setupLevel() {
+        if let mapNode = childNode(withName: "Tile Map Node") as? SKTileMapNode {
+            self.mapNode = mapNode
+        }
+        addCamera()
+    }
     
 }
 
