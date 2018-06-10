@@ -1,0 +1,24 @@
+//
+//  Configuration.swift
+//  Birds
+//
+//  Created by Bryan on 10/06/2018.
+//  Copyright © 2018 Bryan Mansell. All rights reserved.
+//
+
+import CoreGraphics
+
+extension CGPoint {
+    static public func + (left: CGPoint, right: CGPoint) ->CGPoint {
+    return CGPoint(x: left.x + right.x, y: left.y + right.y)
+    }
+    
+    static public func - (left: CGPoint, right: CGPoint) -> CGPoint {
+        return CGPoint(x: left.x - right.x, y: left.y - right.y)
+    }
+    
+    static public func * (left: CGPoint, right: CGFloat) -> CGPoint {
+        return CGPoint(x: left.x * right, y: left.y * right)
+    }
+    
+}

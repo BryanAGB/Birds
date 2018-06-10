@@ -18,6 +18,8 @@
 		931E2E2A20CD459B00396E2B /* BirdsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E2E2920CD459B00396E2B /* BirdsUITests.swift */; };
 		931E2E3820CD47D500396E2B /* BirdTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 931E2E3720CD47D500396E2B /* BirdTileSet.sks */; };
 		931E2E4320CD4F9300396E2B /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E2E4220CD4F9300396E2B /* GameCamera.swift */; };
+		93AE6E9620CD7E9300566F8F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6E9520CD7E9300566F8F /* Configuration.swift */; };
+		93AE6ED220CD9BE700566F8F /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6ED120CD9BE700566F8F /* Bird.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		931E2E2B20CD459B00396E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931E2E3720CD47D500396E2B /* BirdTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdTileSet.sks; sourceTree = "<group>"; };
 		931E2E4220CD4F9300396E2B /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
+		93AE6E9520CD7E9300566F8F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		93AE6ED120CD9BE700566F8F /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				931E2E0320CD459A00396E2B /* AppDelegate.swift */,
+				93AE6E9520CD7E9300566F8F /* Configuration.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				931E2E4220CD4F9300396E2B /* GameCamera.swift */,
+				93AE6ED120CD9BE700566F8F /* Bird.swift */,
 			);
 			path = CustomNodes;
 			sourceTree = "<group>";
@@ -320,8 +326,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				931E2E0A20CD459A00396E2B /* GameScene.swift in Sources */,
+				93AE6E9620CD7E9300566F8F /* Configuration.swift in Sources */,
 				931E2E0C20CD459A00396E2B /* GameViewController.swift in Sources */,
 				931E2E4320CD4F9300396E2B /* GameCamera.swift in Sources */,
+				93AE6ED220CD9BE700566F8F /* Bird.swift in Sources */,
 				931E2E0420CD459A00396E2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
