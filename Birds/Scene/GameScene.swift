@@ -25,6 +25,42 @@ class GameScene: SKScene {
       setupGestureRecognisers()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first{
+            let location = touch.location(in: self)
+            if bird.contains(location) {
+                panRecogniser.isEnabled = false
+                bird.grabbed = true
+                bird.position = location
+            }
+        }
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if bird.grabbed {
+                let location = touch.location(in: self)
+                bird.position = location
+                
+            }
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if bird.grabbed {
+            bird.grabbed = false
+            panRecogniser.isEnabled = true
+            bird.flying = true
+            let dx = anchor.position.x - bird.position.x
+            let dy = anchor.position.y - bird.position.y
+            constrainToAnchor(active: false)
+            let impulse = CGVector(dx: dx, dy: dy)
+            bird.physicsBody?.applyImpulse(impulse)
+            bird.isUserInteractionEnabled = false			
+            
+        }
+    }
+    
     func setupGestureRecognisers() {
         guard let view = view else { return }
         panRecogniser = UIPanGestureRecognizer(target: self, action: #selector(pan))
@@ -43,8 +79,25 @@ class GameScene: SKScene {
     }
     
     func addBird() {
+        bird.physicsBody = SKPhysicsBody(rectangleOf: bird.size)
+        bird.physicsBody?.categoryBitMask = PhysicsCategory.bird
+        bird.physicsBody?.contactTestBitMask = PhysicsCategory.all
+        bird.physicsBody?.collisionBitMask = PhysicsCategory.block | PhysicsCategory.edge
+        bird.physicsBody?.isDynamic = false
         bird.position = anchor.position
         addChild(bird)
+        constrainToAnchor(active: true)
+    }
+    
+    func constrainToAnchor(active: Bool) {
+        if active {
+            let slingRange = SKRange(lowerLimit: 0.0, upperLimit: bird.size.width*3)
+            let positionConstraint = SKConstraint.distance(slingRange, to: anchor)
+            bird.constraints = [positionConstraint]
+        }
+        else {
+            bird.constraints?.removeAll()
+        }
     }
     
     func setupLevel() {
