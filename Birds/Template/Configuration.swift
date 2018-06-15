@@ -17,6 +17,11 @@ struct PhysicsCategory {
     
 }
 
+struct ZPosition {
+    static let background: CGFloat = 0
+    static let obstacles: CGFloat = 1
+}
+
 extension CGPoint {
     static public func + (left: CGPoint, right: CGPoint) ->CGPoint {
     return CGPoint(x: left.x + right.x, y: left.y + right.y)
