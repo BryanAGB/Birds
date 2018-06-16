@@ -30,7 +30,10 @@ class Block: SKSpriteNode {
         }
         
         damageTheshold = health/2
-        super.init(texture: nil, color: UIColor.clear, size: CGSize.zero)
+        
+        let texture = SKTexture(imageNamed: type.rawValue)
+        
+        super.init(texture: texture, color: UIColor.clear, size: CGSize.zero)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -52,7 +55,8 @@ class Block: SKSpriteNode {
             removeFromParent()
         }
         else if health < damageTheshold {
-            color = UIColor.red
+            let brokenTexture = SKTexture(imageNamed: type.rawValue + "Broken")
+            texture = brokenTexture
         }
     }
     

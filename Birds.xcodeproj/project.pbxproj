@@ -18,6 +18,7 @@
 		931E2E2A20CD459B00396E2B /* BirdsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E2E2920CD459B00396E2B /* BirdsUITests.swift */; };
 		931E2E3820CD47D500396E2B /* BirdTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 931E2E3720CD47D500396E2B /* BirdTileSet.sks */; };
 		931E2E4320CD4F9300396E2B /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E2E4220CD4F9300396E2B /* GameCamera.swift */; };
+		9338484B20D52CDB007997B5 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338484A20D52CDB007997B5 /* SKNode+Extensions.swift */; };
 		93AE6E9620CD7E9300566F8F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6E9520CD7E9300566F8F /* Configuration.swift */; };
 		93AE6ED220CD9BE700566F8F /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6ED120CD9BE700566F8F /* Bird.swift */; };
 		93B27AA220D3D98E0025F7B6 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27AA120D3D98E0025F7B6 /* Block.swift */; };
@@ -58,6 +59,7 @@
 		931E2E2B20CD459B00396E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931E2E3720CD47D500396E2B /* BirdTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdTileSet.sks; sourceTree = "<group>"; };
 		931E2E4220CD4F9300396E2B /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
+		9338484A20D52CDB007997B5 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		93AE6E9520CD7E9300566F8F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		93AE6ED120CD9BE700566F8F /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		93B27AA120D3D98E0025F7B6 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		931E2E0220CD459A00396E2B /* Birds */ = {
 			isa = PBXGroup;
 			children = (
+				9338484920D52CB9007997B5 /* Extensions */,
 				931E2E4120CD4F7A00396E2B /* CustomNodes */,
 				931E2E3E20CD4B7300396E2B /* TileSets */,
 				931E2E3D20CD4B3000396E2B /* UI */,
@@ -193,6 +196,14 @@
 				93B27AA120D3D98E0025F7B6 /* Block.swift */,
 			);
 			path = CustomNodes;
+			sourceTree = "<group>";
+		};
+		9338484920D52CB9007997B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9338484A20D52CDB007997B5 /* SKNode+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				931E2E0A20CD459A00396E2B /* GameScene.swift in Sources */,
+				9338484B20D52CDB007997B5 /* SKNode+Extensions.swift in Sources */,
 				93B27AA220D3D98E0025F7B6 /* Block.swift in Sources */,
 				93AE6E9620CD7E9300566F8F /* Configuration.swift in Sources */,
 				931E2E0C20CD459A00396E2B /* GameViewController.swift in Sources */,
