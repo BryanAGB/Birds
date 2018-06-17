@@ -15,6 +15,8 @@ enum RoundState {
 
 class GameScene: SKScene {
     
+    var sceneManagerDelegate: SceneManagerDelegate?
+    
     var mapNode = SKTileMapNode()
     let gameCamera = GameCamera()
     var panRecogniser = UIPanGestureRecognizer()
@@ -53,7 +55,7 @@ class GameScene: SKScene {
         case .finished:
             guard let view = view else { return }
             roundState = .animating
-            let moveCameraBackAction = SKAction.move(to: CGPoint(x: view.bounds.size.width/2, y: view.bounds.size.height/2), duration: 2.0)
+            let moveCameraBackAction = SKAction.move(to: CGPoint(x: view.bounds.size.width/2, y: view.bounds.size.height/2), duration: 1.0)
             moveCameraBackAction.timingMode = .easeInEaseOut
             gameCamera.run(moveCameraBackAction, completion: {
                 self.panRecogniser.isEnabled = true
