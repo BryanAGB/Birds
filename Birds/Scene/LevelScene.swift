@@ -22,8 +22,7 @@ class LevelScene: SKScene {
         background.position = CGPoint(x: frame.midX, y: frame.midY)
         background.aspectScale(to: frame.size, width: true, multiplier: 1.0)
         background.zPosition = ZPosition.background
-        addChild(background
-        )
+        addChild(background)
         var level = 1
         let columnStartingPoint  = frame.midX/2
         let rowStartingPoint = frame.midY + frame.midY/2
