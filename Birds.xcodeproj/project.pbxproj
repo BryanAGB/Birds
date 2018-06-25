@@ -25,6 +25,10 @@
 		93AE6E9620CD7E9300566F8F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6E9520CD7E9300566F8F /* Configuration.swift */; };
 		93AE6ED220CD9BE700566F8F /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6ED120CD9BE700566F8F /* Bird.swift */; };
 		93B27AA220D3D98E0025F7B6 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27AA120D3D98E0025F7B6 /* Block.swift */; };
+		93D4B8EF20DD10FE00DE2AF5 /* GameScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93D4B8EE20DD10FE00DE2AF5 /* GameScene2.sks */; };
+		93D4B8F220DD127900DE2AF5 /* AnnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4B8F120DD127900DE2AF5 /* AnnimationHelper.swift */; };
+		93D4B8F520DD16E300DE2AF5 /* Level.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D4B8F420DD16E300DE2AF5 /* Level.plist */; };
+		93D4B8F720DD1AE300DE2AF5 /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4B8F620DD1AE300DE2AF5 /* LevelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		93AE6E9520CD7E9300566F8F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		93AE6ED120CD9BE700566F8F /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		93B27AA120D3D98E0025F7B6 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		93D4B8EE20DD10FE00DE2AF5 /* GameScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene2.sks; sourceTree = "<group>"; };
+		93D4B8F120DD127900DE2AF5 /* AnnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnimationHelper.swift; sourceTree = "<group>"; };
+		93D4B8F420DD16E300DE2AF5 /* Level.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Level.plist; sourceTree = "<group>"; };
+		93D4B8F620DD1AE300DE2AF5 /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,8 @@
 		931E2E0220CD459A00396E2B /* Birds */ = {
 			isa = PBXGroup;
 			children = (
+				93D4B8F320DD16C100DE2AF5 /* Levels */,
+				93D4B8F020DD126400DE2AF5 /* HelperFiles */,
 				9338484920D52CB9007997B5 /* Extensions */,
 				931E2E4120CD4F7A00396E2B /* CustomNodes */,
 				931E2E3E20CD4B7300396E2B /* TileSets */,
@@ -170,7 +180,6 @@
 		931E2E3C20CD4B1D00396E2B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				931E2E0520CD459A00396E2B /* GameScene1.sks */,
 				931E2E0920CD459A00396E2B /* GameScene.swift */,
 				9338484C20D54517007997B5 /* MenuScene.swift */,
 				9338484E20D5452D007997B5 /* LevelScene.swift */,
@@ -213,6 +222,25 @@
 				9338484A20D52CDB007997B5 /* SKNode+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93D4B8F020DD126400DE2AF5 /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93D4B8F120DD127900DE2AF5 /* AnnimationHelper.swift */,
+				93D4B8F620DD1AE300DE2AF5 /* LevelData.swift */,
+			);
+			path = HelperFiles;
+			sourceTree = "<group>";
+		};
+		93D4B8F320DD16C100DE2AF5 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				931E2E0520CD459A00396E2B /* GameScene1.sks */,
+				93D4B8EE20DD10FE00DE2AF5 /* GameScene2.sks */,
+				93D4B8F420DD16E300DE2AF5 /* Level.plist */,
+			);
+			path = Levels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +351,9 @@
 				931E2E0F20CD459A00396E2B /* Main.storyboard in Resources */,
 				931E2E0620CD459A00396E2B /* GameScene1.sks in Resources */,
 				931E2E1120CD459B00396E2B /* Assets.xcassets in Resources */,
+				93D4B8F520DD16E300DE2AF5 /* Level.plist in Resources */,
 				931E2E1420CD459B00396E2B /* LaunchScreen.storyboard in Resources */,
+				93D4B8EF20DD10FE00DE2AF5 /* GameScene2.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D4B8F720DD1AE300DE2AF5 /* LevelData.swift in Sources */,
 				931E2E0A20CD459A00396E2B /* GameScene.swift in Sources */,
 				9338484B20D52CDB007997B5 /* SKNode+Extensions.swift in Sources */,
 				93B27AA220D3D98E0025F7B6 /* Block.swift in Sources */,
@@ -355,6 +386,7 @@
 				93AE6E9620CD7E9300566F8F /* Configuration.swift in Sources */,
 				931E2E0C20CD459A00396E2B /* GameViewController.swift in Sources */,
 				936CC10720D7D5E300FC7CD8 /* SpriteKitButton.swift in Sources */,
+				93D4B8F220DD127900DE2AF5 /* AnnimationHelper.swift in Sources */,
 				931E2E4320CD4F9300396E2B /* GameCamera.swift in Sources */,
 				93AE6ED220CD9BE700566F8F /* Bird.swift in Sources */,
 				931E2E0420CD459A00396E2B /* AppDelegate.swift in Sources */,
