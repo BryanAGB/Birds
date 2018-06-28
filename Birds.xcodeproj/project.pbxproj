@@ -22,6 +22,7 @@
 		9338484D20D54517007997B5 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338484C20D54517007997B5 /* MenuScene.swift */; };
 		9338484F20D5452D007997B5 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338484E20D5452D007997B5 /* LevelScene.swift */; };
 		936CC10720D7D5E300FC7CD8 /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CC10620D7D5E300FC7CD8 /* SpriteKitButton.swift */; };
+		938F9F8420E3ACBB00F3B1C7 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F9F8320E3ACBB00F3B1C7 /* Popup.swift */; };
 		93AE6E9620CD7E9300566F8F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6E9520CD7E9300566F8F /* Configuration.swift */; };
 		93AE6ED220CD9BE700566F8F /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE6ED120CD9BE700566F8F /* Bird.swift */; };
 		93B27AA220D3D98E0025F7B6 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B27AA120D3D98E0025F7B6 /* Block.swift */; };
@@ -29,6 +30,7 @@
 		93D4B8F220DD127900DE2AF5 /* AnnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4B8F120DD127900DE2AF5 /* AnnimationHelper.swift */; };
 		93D4B8F520DD16E300DE2AF5 /* Level.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D4B8F420DD16E300DE2AF5 /* Level.plist */; };
 		93D4B8F720DD1AE300DE2AF5 /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4B8F620DD1AE300DE2AF5 /* LevelData.swift */; };
+		93F93F4520E10DC400E81C96 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F93F4420E10DC400E81C96 /* Enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,7 @@
 		9338484C20D54517007997B5 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		9338484E20D5452D007997B5 /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
 		936CC10620D7D5E300FC7CD8 /* SpriteKitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
+		938F9F8320E3ACBB00F3B1C7 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		93AE6E9520CD7E9300566F8F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		93AE6ED120CD9BE700566F8F /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		93B27AA120D3D98E0025F7B6 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		93D4B8F120DD127900DE2AF5 /* AnnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnimationHelper.swift; sourceTree = "<group>"; };
 		93D4B8F420DD16E300DE2AF5 /* Level.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Level.plist; sourceTree = "<group>"; };
 		93D4B8F620DD1AE300DE2AF5 /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
+		93F93F4420E10DC400E81C96 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,8 @@
 				931E2E4220CD4F9300396E2B /* GameCamera.swift */,
 				93AE6ED120CD9BE700566F8F /* Bird.swift */,
 				93B27AA120D3D98E0025F7B6 /* Block.swift */,
+				93F93F4420E10DC400E81C96 /* Enemy.swift */,
+				938F9F8320E3ACBB00F3B1C7 /* Popup.swift */,
 			);
 			path = CustomNodes;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F93F4520E10DC400E81C96 /* Enemy.swift in Sources */,
 				93D4B8F720DD1AE300DE2AF5 /* LevelData.swift in Sources */,
 				931E2E0A20CD459A00396E2B /* GameScene.swift in Sources */,
 				9338484B20D52CDB007997B5 /* SKNode+Extensions.swift in Sources */,
@@ -389,6 +396,7 @@
 				93D4B8F220DD127900DE2AF5 /* AnnimationHelper.swift in Sources */,
 				931E2E4320CD4F9300396E2B /* GameCamera.swift in Sources */,
 				93AE6ED220CD9BE700566F8F /* Bird.swift in Sources */,
+				938F9F8420E3ACBB00F3B1C7 /* Popup.swift in Sources */,
 				931E2E0420CD459A00396E2B /* AppDelegate.swift in Sources */,
 				9338484F20D5452D007997B5 /* LevelScene.swift in Sources */,
 			);
